@@ -10,16 +10,24 @@ import Avatar from '@material-ui/core/Avatar';
 function Header() {
     return (
         <div className="header">
-            <MenuIcon/>
-            <img  className="header__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="youtube logo"/>
+            
+            <div className="header-__eft">
+                <MenuIcon/>
+                <img  className="header__logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="youtube logo"/>
+            </div>
 
-            <input type="text"/>
-            <SearchIcon/>
-            <VideoCallIcon/>
-            <AppsIcon/>
-            <NotificationsIcon/>
-            <Avatar/>
+            <div className="header__input">
+                <input placeholder="Search" type="text"/>
+                <SearchIcon  className="header__inputButton" />
+            </div>
 
+
+            <div className="header__icons">
+                <VideoCallIcon  className="header__icon"/>
+                <AppsIcon className="header__icon"/>
+                <NotificationsIcon className="header__icon"/>
+                <Avatar className="header__icon"/>
+            </div>
 
         </div>
     )

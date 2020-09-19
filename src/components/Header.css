@@ -1,8 +1,66 @@
+
+html {
+    background: whitesmoke;
+}
+
+
+
 .header {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: whitesmoke;
+}
+
+
+.header__left {
     display: flex;
     align-items: center;
 }
 
+.header__input {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    border: 1px solid black;
+
+}
+
+.header__input > input {
+    flex: 1;
+    border: none;
+    background: whitesmoke;
+}
+
+
+.header__inputButton {
+    /* Since the search icon is a material ui icon, it already has an in built property of width. In order to override that, we use the !important css property to override any preexisting properties */
+    width: 50px  !important ;
+    background-color: #fafafa;
+    border-left: 1px solid lightgrey;
+    color: grey;
+}
+
+
+.header__icons {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header__icon {
+    margin: 8px;
+}
+
 .header__logo {
     height: 25px;
+
+    /* Object fit is a superb tool to use especially with non svg images */
+    object-fit: contain;  
+    margin-left: 20px;
 }
