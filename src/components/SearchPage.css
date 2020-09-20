@@ -1,0 +1,33 @@
+.searchPage {
+    /* Since sidebar is flex: 0.2*/
+    flex: 0.8;
+    background-color: #f9f9f9;
+    padding: 20px 20px;
+
+
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    background-color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.searchPage__filter {
+    display: flex;
+    align-items: center;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    color: rgb(104, 102, 102);
+    
+    
+}
+
+
+.searchPage__filter > h2 {
+    margin-left: 10px;
+}
+
